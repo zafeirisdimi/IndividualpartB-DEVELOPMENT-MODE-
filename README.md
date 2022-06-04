@@ -37,4 +37,4 @@ Assignment to practise SQL fundamentals connected with C# and Entity Framework
 <!--te-->
 
 ### SQL Schema
-![SQL SCHEMA](https://github.com/zafeirisdimi/IndividualProjectPartB/blob/de8ae977395920d2492dd4b9dde30d1622c67b4f/SQLSCHEMA.png)
+![SQL SCHEMA](Prototype/img/SQLSCHEMA.png)
