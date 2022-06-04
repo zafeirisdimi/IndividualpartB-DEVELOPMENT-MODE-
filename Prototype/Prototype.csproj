@@ -80,7 +80,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Json\mockup_assignments.json" />
+    <None Include="Json\mockup_cities.json" />
     <None Include="Json\mockup_courses.json" />
+    <None Include="Json\mockup_states.json" />
     <None Include="Json\mockup_students.json" />
     <None Include="Json\mockup_trainers.json" />
     <None Include="packages.config" />
