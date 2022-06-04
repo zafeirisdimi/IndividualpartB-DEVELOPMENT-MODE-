@@ -1,0 +1,43 @@
+﻿[
+    {
+        "Name": "Athens",
+        "Website": "https://en.wikipedia.org/wiki/Athens",
+        "": ""
+    },
+    {
+        "Name": "Thessaloniki",
+        "Website": "https://en.wikipedia.org/wiki/Thessaloniki",
+        "": ""
+    },
+    {
+        "Name": "Patra",
+        "Website": "https://en.wikipedia.org/wiki/Patras",
+        "": ""
+    },
+    {
+        "Name": "Irakleio",
+        "Website": "https://en.wikipedia.org/wiki/Ioannina",
+        "": ""
+    },
+    {
+        "Name": "Larissa",
+        "Website": "https://en.wikipedia.org/wiki/Larissa",
+        "": ""
+    },
+    {
+        "Name": "Ioannina",
+        "Website": "https://en.wikipedia.org/wiki/Ioannina"
+    },
+    {
+        "Name": "Volos",
+        "Website": "https://en.wikipedia.org/wiki/Volos"
+    },
+    {
+        "Name": "Alexandroupoli",
+        "Website": "https://en.wikipedia.org/wiki/Alexandroupoli"
+    },
+    {
+        "Name": "Trikala",
+        "Website": "https://en.wikipedia.org/wiki/Trikala"
+    }
+]

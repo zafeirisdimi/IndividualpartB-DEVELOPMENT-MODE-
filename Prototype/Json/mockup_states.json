@@ -1,0 +1,43 @@
+﻿[
+    {
+        "Name": "Attiki",
+        "Website": "https://en.wikipedia.org/wiki/Attica",
+        "": ""
+    },
+    {
+        "Name": "Makedonia",
+        "Website": "https://en.wikipedia.org/wiki/Macedonia_(Greece)",
+        "": ""
+    },
+    {
+        "Name": "Peloponnese",
+        "Website": "https://en.wikipedia.org/wiki/Peloponnese",
+        "": ""
+    },
+    {
+        "Name": "Crete",
+        "Website": "https://en.wikipedia.org/wiki/Crete",
+        "": ""
+    },
+    {
+        "Name": "Thessaly",
+        "Website": "https://en.wikipedia.org/wiki/Thessaly",
+        "": ""
+    },
+    {
+        "Name": "Epirus",
+        "Website": "https://en.wikipedia.org/wiki/Epirus_(region)"
+    },
+    {
+        "Name": "Thrace",
+        "Website": "https://en.wikipedia.org/wiki/Thrace"
+    },
+    {
+        "Name": "Dodecanese",
+        "Website": "https://en.wikipedia.org/wiki/Dodecanese"
+    },
+    {
+        "Name": "Ionian Islands",
+        "Website": "https://en.wikipedia.org/wiki/Ionian_Islands"
+    }
+]
