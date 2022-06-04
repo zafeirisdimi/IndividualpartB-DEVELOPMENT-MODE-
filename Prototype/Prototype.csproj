@@ -89,6 +89,9 @@
     <Folder Include="Controller\" />
     <Folder Include="Services\Repository\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\SQLSCHEMA.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
