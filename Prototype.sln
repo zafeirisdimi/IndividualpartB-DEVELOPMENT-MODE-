@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32510.428
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{20F1DFF0-E666-49DE-900A-777EBD5B32DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{130B0DBE-55B6-4D9F-B59C-6AFCAC8DD302}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\BOOTCAMP_CODING\IndividualPartb\SQLSCHEMA.png = ..\..\..\Desktop\BOOTCAMP_CODING\IndividualPartb\SQLSCHEMA.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
