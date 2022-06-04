@@ -1,1 +1,74 @@
-﻿
+﻿[
+    {
+        "FirstName": "Periklis",
+        "LastName": "Aidinopoulos",
+        "Phone": "2104512987",
+        "Email": "aidinopoulos@hotmail.com",
+        "Salary": "3500",
+        "": ""
+    },
+    {
+        "FirstName": "Sandra",
+        "LastName": "Papastavrou",
+        "Phone": "2107755986",
+        "Email": "papastavrou@yahoo.com",
+        "Salary": "3000",
+        "": ""
+    },
+    {
+        "FirstName": "Ektoras",
+        "LastName": "Nikolaidis",
+        "Phone": "2104411202",
+        "Email": "nikolaidis@gmail.com",
+        "Salary": "3200",
+        "": ""
+    },
+    {
+        "FirstName": "Thodoros",
+        "LastName": "Karanasios",
+        "Phone": "2103636990",
+        "Email": "karanasios@hotmail.com",
+        "Salary": "3500",
+        "": ""
+    },
+    {
+        "FirstName": "Giorgos",
+        "LastName": "Papageorgiou",
+        "Phone": "214748449",
+        "Email": "papageorgiou@gmail.com",
+        "Salary": "3000",
+        "": ""
+    },
+    {
+        "FirstName": "",
+        "LastName": "",
+        "Phone": "",
+        "Email": "",
+        "Salary": "",
+        "": ""
+    },
+    {
+        "FirstName": "",
+        "LastName": "",
+        "Phone": "",
+        "Email": "",
+        "Salary": "",
+        "": ""
+    },
+    {
+        "FirstName": "",
+        "LastName": "",
+        "Phone": "",
+        "Email": "",
+        "Salary": "",
+        "": ""
+    },
+    {
+        "FirstName": "",
+        "LastName": "",
+        "Phone": "",
+        "Email": "",
+        "Salary": "",
+        "": ""
+    }
+]
