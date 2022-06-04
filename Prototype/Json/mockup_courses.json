@@ -1,1 +1,61 @@
-﻿
+﻿[
+    {
+        "Name": "HTML ",
+        "Description": "HTML fundamentals",
+        "TotalHours": 30,
+        "Website": "https://www.w3schools.com/html/html_intro.asp",
+        "": ""
+    },
+    {
+        "Name": "CSS",
+        "Description": "CSS fundamentals",
+        "TotalHours": 30,
+        "Website": "https://learn.co/lessons/CSS-Fundamentals",
+        "": ""
+    },
+    {
+        "Name": "JAVASCRIPT",
+        "Description": "JS fundamentals and  frameworks like React, Angular",
+        "TotalHours": 50,
+        "Website": "https://javascript.info/first-steps",
+        "": ""
+    },
+    {
+        "Name": "C#",
+        "Description": "C# fundamentals",
+        "TotalHours": 100,
+        "Website": "https://docs.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/",
+        "": ""
+    },
+    {
+        "Name": "SQL",
+        "Description": "Sql fundamentals",
+        "TotalHours": 50,
+        "Website": "https://www.w3schools.com/sql/sql_intro.asp",
+        "": ""
+    },
+    {
+        "Name": "GITHUB",
+        "Description": "Git & Github fundamentals",
+        "TotalHours": 25,
+        "Website": "https://rogerdudler.github.io/git-guide/"
+    },
+    {
+        "Name": "PROJECT MANAGEMENT",
+        "Description": "Project Management fundamentals",
+        "TotalHours": 25,
+        "Website": "https://www.tutorialspoint.com/pmp-exams/project_management_fundamentals.htm"
+    },
+    {
+        "Name": "TESTING FUNDENMENTALS",
+        "Description": "Testing fundamentals like UnitTesting,Reports",
+        "TotalHours": 35,
+        "Website": "https://softwaretestingfundamentals.com/"
+    },
+    {
+        "Name": "ENTITY FRAMEWORK",
+        "Description": "Entity Framework fundamentals with database SQL",
+        "TotalHours": 60,
+        "Website": "https://www.tutorialspoint.com/entity_framework/entity_framework_environment_setup.htm"
+    }
+]
