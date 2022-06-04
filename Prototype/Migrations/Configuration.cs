@@ -21,8 +21,8 @@
             // Student s1 = new Student() { FirstName = "Aristotelis", LastName = "Nikolaou", Phone = "2104512987", Email = "nikolaou@hotmail.com", Revenue = 2500 };
             // Student s2 = new Student() { FirstName = "Panagiotis", LastName = "Pipiros", Phone = "2107755986", Email = "pipiros@yahoo.com", Revenue = 2000 };
             // Student s3 = new Student() { FirstName = "Eleni", LastName = "Adamantopoulou", Phone = "2104411202", Email = "eleni.a@gmail.com", Revenue = 2200 };
-            // Student s4 = new Student() { FirstName = "Patric", LastName = "Jackson", Phone = "2103636990", Email = "menelaosargi@hotmail.com", Revenue = 1500 };
-            // Student s5 = new Student() { FirstName = "Christin", LastName = "Muller", Phone = "214748449", Email = "christinapapa@gmail.com", Revenue = 1000 };
+            // Student s4 = new Student() { FirstName = "Patric", LastName = "Jackson", Phone = "2103636990", Email = "patric@hotmail.com", Revenue = 1500 };
+            // Student s5 = new Student() { FirstName = "Christin", LastName = "Muller", Phone = "214748449", Email = "muller@gmail.com", Revenue = 1000 };
             //context.Students.AddOrUpdate(s => s.FirstName, s1, s2, s3, s4, s5);
 
             //Trainer t1 = new Trainer() { FirstName = "Panagiotis", LastName = "Papadopoulou", Phone = "214748449", Email = "christinapapa@gmail.com", Salary = 3000 };
