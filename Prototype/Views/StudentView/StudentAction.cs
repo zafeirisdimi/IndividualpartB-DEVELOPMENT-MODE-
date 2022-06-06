@@ -13,7 +13,7 @@ namespace Prototype.Views.StudentView
         {
             foreach (var student in students)
             {
-                Console.WriteLine($"|{student.FirstName,-15} {student.LastName,-15} {student.Phone,-15} {student.Email,-15} {student.Revenue,-15}|");
+                Console.WriteLine($"|{student.FirstName,-15} {student.LastName,-15} {student.Phone,-15} {student.Email,-15} {student.TuitionFees,-15}|");
             }
         }
 

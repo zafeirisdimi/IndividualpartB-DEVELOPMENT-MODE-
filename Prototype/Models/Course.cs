@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prototype.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,22 @@ namespace Prototype.Models
         public string Name { get; set; }
         public string  Description { get; set; }
 
+        public Stream Stream { get; set; }
+
+        public TypeCourse Type { get; set; }
+
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+
+        public Difficulty Difficulty { get; set; }
+
         public int TotalHours { get; set; }
         public string Website { get ; set ; }
+
+        public virtual ICollection<Student> Students { get; set; }
+        public Course()
+        {
+            this.Students = new HashSet<Student>();
+        }
     }
 }

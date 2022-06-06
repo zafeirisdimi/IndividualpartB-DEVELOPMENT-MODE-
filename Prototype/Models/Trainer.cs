@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Prototype.Enum;
 
 namespace Prototype.Models
 {
@@ -34,15 +35,23 @@ namespace Prototype.Models
 
         public int Age { get; set; }
 
+        [Required]
+        public Subject Subject { get; set;  }
+
         public int? CityId { get; set; } //foreign key --- relationship [0.1 to *]
         public City City { get; set; }
 
-        public int? AssignmentId { get; set; } //foreign key --- relationship [0.1 to *]
-        public Assignment Assignment { get; set; }
+        
         public virtual ICollection<Course> Courses { get; set; } //navigation property
+        public virtual ICollection<Student> Students { get; set; } //navigation property
+
+
+
         public Trainer()
         {
+            this.Students = new HashSet<Student>();
             this.Courses = new HashSet<Course>(); //implementation relationship many to many
+
         }
     }
 }

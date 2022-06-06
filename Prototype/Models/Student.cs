@@ -32,31 +32,32 @@ namespace Prototype.Models
         public string Phone { get; set; }
 
         [Required]
-        public decimal Revenue { get; set; }
+        public decimal TuitionFees { get; set; }
 
         public int Age { get; set; }
 
+        [ForeignKey("Grade")]
         public int? GradeId { get; set; }// foreign key --- relationship [0.1 to *]
         public Grade Grade { get; set; }
 
-
+        [ForeignKey("City")]
         public int? CityId { get; set; } //foreign key --- relationship [0.1 to *]
         public City City { get; set; }
 
-        public int? AssignmentId { get; set; } //foreign key --- relationship [0.1 to *]
-        public Assignment Assignment { get; set; }
+        
 
-
-        public int? CourseId { get; set; }//foreign key -- realationship [* to *]
+       
         public virtual ICollection<Course> Courses { get; set; } //navigation property
+        public virtual ICollection<Trainer> Trainers { get; set; } //navigation property
+
+        public virtual ICollection<Assignment> Assignments{ get; set; } //navigation property
 
 
         public Student()
         {
             this.Courses = new HashSet<Course>(); //implementation relationship many to many
-
-
-
+            this.Trainers = new HashSet<Trainer>(); //implementation relationship many to many
+            this.Assignments = new HashSet<Assignment>(); //implementation relationship many to many
         }
 
     }

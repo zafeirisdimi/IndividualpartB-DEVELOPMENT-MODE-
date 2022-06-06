@@ -11,6 +11,11 @@ namespace Prototype.Models
 
         public int GradeId { get; set; }
         public string GradeName { get; set; }
+
+        public int GradeLevel { get; set; }
+
         public ICollection<Student> Students { get; set; }  //navigation property
+
+        public ICollection<StudentPerCourse> StudentPerCourses { get; set; }  //navigation property  
     }
 }
