@@ -74,6 +74,8 @@
     <Compile Include="Services\MainMenu.cs" />
     <Compile Include="Services\MockupRepository\IInputMockupData.cs" />
     <Compile Include="Services\MockupRepository\ImportMockupData.cs" />
+    <Compile Include="Views\AssignmentView\AssignemntAction.cs" />
+    <Compile Include="Views\CourseView\CourseAction.cs" />
     <Compile Include="Views\StudentView\StudentAction.cs" />
     <Compile Include="Views\TrainerView\TrainerAction.cs" />
   </ItemGroup>

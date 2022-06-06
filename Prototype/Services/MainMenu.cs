@@ -1,4 +1,7 @@
-﻿using Prototype.Models;
+﻿using Prototype.ApplicationDatabase;
+using Prototype.Models;
+using Prototype.Views.AssignmentView;
+using Prototype.Views.CourseView;
 using Prototype.Views.StudentView;
 using Prototype.Views.TrainerView;
 using System;
@@ -32,16 +35,24 @@ namespace Prototype.Services
             switch (choice)
             {
                 case Choice.PrintAllStudents:
-                    //StudentAction.PrintAllStudents();
+                    ApplicationContext c1 = new ApplicationContext();
+                    var students = c1.Students.ToList();
+                    StudentAction.PrintAllStudents(students);
                     return true;
                 case Choice.PrintAllTrainers:
-                    //TrainerAction.PrintAllTrainers();
+                    ApplicationContext c2 = new ApplicationContext();
+                    var trainers = c2.Trainers.ToList();
+                    TrainerAction.PrintAllTrainers(trainers);
                     return true;
                 case Choice.PrintAllCourses:
-                    //service PrintAllCourses();
+                    ApplicationContext c3 = new ApplicationContext();
+                    var courses = c3.Courses.ToList();
+                    CourseAction.PrintAllCourses(courses);
                     return true;
                 case Choice.PrintAllAssignments:
-                    // service PrintAllCourses();
+                    ApplicationContext c4 = new ApplicationContext();
+                    var assignments = c4.Assignments.ToList();
+                    AssigmentAction.PrintAllAssignments(assignments);                   
                     return true;
                //case "PrintStudentsPerCourse":
                 ////    //PrintAllCourses();
