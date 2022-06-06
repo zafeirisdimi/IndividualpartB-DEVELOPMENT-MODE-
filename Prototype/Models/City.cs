@@ -13,8 +13,10 @@ namespace Prototype.Models
         public string Name { get; set; }
 
         public string Website { get; set; }
-        public int? StateId { get; set; }
+        public int? StateId { get; set; } // foreign key
         public State State { get; set; }
-        
+        public ICollection<Trainer> Trainers{ get; set; } //navigation property
+        public ICollection<Student> Students{ get; set; } //navigation property
+
     }
 }

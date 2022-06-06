@@ -11,5 +11,6 @@ namespace Prototype.Models
         public int StateId { get; set; }
         public string Name { get; set; }
         public string Website { get; set; }
+        public ICollection<City> City { get; set; } //navigation property
     }
 }

@@ -12,8 +12,7 @@ namespace Prototype.Models
         string LastName { get; }
         int Age { get; }
         string Phone { get; }
-        int CityId { get; }
-        int StateId { get; }
+        int? CityId { get; }
       
     }
 }

@@ -8,11 +8,9 @@ namespace Prototype.Models
 {
     public class Grade
     {
-        public int GradeId { get; set; }
-        public Student Student { get; set; }
-        public int StudentId { get; set; }
 
-        //navigation properties
-        public ICollection<Student> Students { get; set; }  
+        public int GradeId { get; set; }
+        public string GradeName { get; set; }
+        public ICollection<Student> Students { get; set; }  //navigation property
     }
 }
