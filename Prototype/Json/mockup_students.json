@@ -1,74 +1,43 @@
 ﻿[
-    {
-        "FirstName": "Aristotelis",
-        "LastName": "Nikolaou",
-        "Phone": "2104512987",
-        "Email": "nikolaou@hotmail.com",
-        "Revenue": "2500",
-        "": ""
-    },
-    {
-        "FirstName": "Panagiotis",
-        "LastName": "Pipiros",
-        "Phone": "2107755986",
-        "Email": "pipiros@yahoo.com",
-        "Revenue": "2000",
-        "": ""
-    },
-    {
-        "FirstName": "Eleni",
-        "LastName": "Adamantopoulou",
-        "Phone": "2104411202",
-        "Email": "eleni.a@gmail.com",
-        "Revenue": "2200",
-        "": ""
-    },
-    {
-        "FirstName": "Patric",
-        "LastName": "Jackson",
-        "Phone": "2103636990",
-        "Email": "patric@hotmail.com",
-        "Revenue": "1500",
-        "": ""
-    },
-    {
-        "FirstName": "Christin",
-        "LastName": "Muller",
-        "Phone": "214748449",
-        "Email": "muller@gmail.com",
-        "Revenue": "1000",
-        "": ""
-    },
-    {
-        "FirstName": "",
-        "LastName": "",
-        "Phone": "",
-        "Email": "",
-        "Revenue": "",
-        "": ""
-    },
-    {
-        "FirstName": "",
-        "LastName": "",
-        "Phone": "",
-        "Email": "",
-        "Revenue": "",
-        "": ""
-    },
-    {
-        "FirstName": "",
-        "LastName": "",
-        "Phone": "",
-        "Email": "",
-        "Revenue": "",
-        "": ""
-    },
-    {
-        "FirstName": "",
-        "LastName": "",
-        "Phone": "",
-        "Email": "",
-        "Revenue": "",
-        "": ""
-    }
+  {
+    "FirstName": "Aristotelis",
+    "LastName": "Nikolaou",
+    "Phone": "2104512987",
+    "Email": "nikolaou@hotmail.com",
+    "Revenue": "2500",
+    "CityId": "2"
+  },
+  {
+    "FirstName": "Panagiotis",
+    "LastName": "Pipiros",
+    "Phone": "2107755986",
+    "Email": "pipiros@yahoo.com",
+    "Revenue": "2000",
+    "CityId": "1"
+  },
+  {
+    "FirstName": "Eleni",
+    "LastName": "Adamantopoulou",
+    "Phone": "2104411202",
+    "Email": "eleni.a@gmail.com",
+    "Revenue": "2200",
+    "CityId": "1"
+  },
+  {
+    "FirstName": "Patric",
+    "LastName": "Jackson",
+    "Phone": "2103636990",
+    "Email": "patric@hotmail.com",
+    "Revenue": "1500",
+    "CityId": "2"
+  },
+  {
+    "FirstName": "Christin",
+    "LastName": "Muller",
+    "Phone": "214748449",
+    "Email": "muller@gmail.com",
+    "Revenue": "1000",
+    "CityId": "5"
+  }
+   
 ]

@@ -13,6 +13,8 @@ namespace Prototype
         static void Main(string[] args)
         {
 
+
+
             ApplicationContext db = new ApplicationContext();
             bool showMenu = true;
             while (showMenu)
