@@ -1,4 +1,5 @@
 ﻿using Prototype.ApplicationDatabase;
+using Prototype.Enum;
 using Prototype.Models;
 using Prototype.Views.AssignmentView;
 using Prototype.Views.CourseView;
@@ -22,58 +23,133 @@ namespace Prototype.Services
             Choice choice = (Choice)input;
             switch (choice)
             {
-                case Choice.PrintAllStudents:
+                case Choice.Students:
+                    using (var c = new ApplicationContext())
+                    {
 
-                    ApplicationContext c1 = new ApplicationContext();
-                    var students = c1.Students.ToList();
-                    StudentAction.PrintAllStudents(students);
-                    Thread.Sleep(6000);
+                        var students = c.Students.ToList();
+                        StudentAction.PrintAllStudents(students);
+                        Thread.Sleep(1000);
+                    }
                     return true;
 
-                case Choice.PrintAllTrainers:
-                    
-                    ApplicationContext c2 = new ApplicationContext();
-                    var trainers = c2.Trainers.ToList();
-                    TrainerAction.PrintAllTrainers(trainers);
-                    Thread.Sleep(6000);
+                case Choice.Trainers:
+                    using (var c = new ApplicationContext())
+                    {
+                        var trainers = c.Trainers.ToList();
+                        TrainerAction.PrintAllTrainers(trainers);
+                        Thread.Sleep(2000);
+                    }
                     return true;
 
-                case Choice.PrintAllCourses:
-
-                    ApplicationContext c3 = new ApplicationContext();
-                    var courses = c3.Courses.ToList();
-                    CourseAction.PrintAllCourses(courses);
-                    Thread.Sleep(6000);
+                case Choice.Courses:
+                    using (var c = new ApplicationContext())
+                    {
+                        var courses = c.Courses.ToList();
+                        CourseAction.PrintAllCourses(courses);
+                        Thread.Sleep(3000);
+                    }
                     return true;
 
-                case Choice.PrintAllAssignments:
-                    ApplicationContext c4 = new ApplicationContext();
-                    var assignments = c4.Assignments.ToList();
-                    AssigmentAction.PrintAllAssignments(assignments);
-                    Thread.Sleep(6000);
+                case Choice.Assignments:
+                    using (var c = new ApplicationContext())
+                    {
+                        var assignments = c.Assignments.ToList();
+                        AssigmentAction.PrintAllAssignments(assignments);
+                        Thread.Sleep(3000);
+                    }
                     return true;
 
-                //case "PrintStudentsPerCourse":
-                ////    //PrintAllCourses();
-                ////    return true;
-                ////case "6":
-                ////    //PrintAllCourses();
-                ////    return true;
-                ////case "7":
-                ////   // PrintAllCourses();
-                ////    return true;
-                ////case "8":
-                ////   // PrintAllCourses();
-                ////case "9":
-                ////    //PrintAllCourses();
+                case Choice.StudentCourse:
+
+                    using (var c = new ApplicationContext())
+                    {
+                        var courses = c.Courses.ToList();
+                        foreach (var course in courses)
+                        {
+                            Console.WriteLine($"\t\t|Title: {course.Name}\t has: ({course.Students.Count()}) students");
+
+                            foreach (var stu in course.Students)
+                            {
+                                Console.WriteLine($"\t\t\t\t\t\t\t Student {stu.FirstName,-10}\t{stu.LastName,-10} ");
+                            }
+                            Thread.Sleep(4000);
+                        }
+                    }
+                    return true;
+
+                case Choice.TrainerCourse:
+                    using (var c = new ApplicationContext())
+                    {
+                        var courses = c.Courses.ToList();
+                        foreach (var course in courses)
+                        {
+                            Console.WriteLine($"\t\t|Course: {course.Name}\t has: ({course.Trainers.Count()}) trainers");
+
+                            foreach (var trainer in course.Trainers)
+                            {
+                                Console.WriteLine($"\t\t\t\t\t\t\t Trainer {trainer.FirstName,-10}\t{trainer.LastName,-10} ");
+                            }
+                            Thread.Sleep(4000);
+                        }
+                    }
+                    return true;
+                case Choice.AssignmentCourse:
+                    using (var c = new ApplicationContext())
+                    {
+                        var courses = c.Courses.ToList();
+                        foreach (var course in courses)
+                        {
+                            Console.WriteLine($"\t\t|Course: {course.Name}\t has: ({course.Assignments.Count()}) assignments");
+
+                            foreach (var assign in course.Assignments)
+                            {
+                                Console.WriteLine($"\t\t\t\t\t\t\t|Title: {assign.Name}\t|Points: {assign.Points}\t|StartDate: {assign.StartDate}\t|StartDate: {assign.EndDate}");
+                            }
+                            Thread.Sleep(4000);
+                        }
+                    }
+                    return true;
+                case Choice.AssignmentsPerCoursePerStudent:
+                    using (var c = new ApplicationContext())
+                    {
+                        var students = c.Students.ToList();
+                        foreach (var s in students)
+                        {
+                            Console.WriteLine($"\t\t Student {s.FirstName,-10}\t{s.LastName,-10} has ({s.Courses.Count()}) courses ");
+                            //Console.WriteLine($"\t\t Assignment {a.Name,-10}\t{a.Points,-10} teach: ({a.Courses.Count()}) courses");
+                            
+                            foreach (var course in s.Courses)
+                            {
+                                Console.WriteLine($"\t\t\t|Title: {course.Name}\t has ({course.Assignments.Count}) assignments");
+                                foreach (var assign in course.Assignments)
+                                {
+                                    Console.WriteLine($"\t\t |Assignment {assign.Name,-10}\t|Points:{assign.Points,-10}");
+                                }
+                            }
+                            Thread.Sleep(4000);
+                        }
+                    }
+                    return true;
+                case Choice.StudentsInMultipleCourses:
+                    using (var c = new ApplicationContext())
+                    {
+                        var students = c.Students.ToList().Where( s =>s.Courses.Count()>1);
+                        foreach (var student in students)
+                        {
+                            Console.WriteLine($"\t\t Student {student.FirstName,-10}\t{student.LastName,-10} has ({student.Courses.Count()}) courses ");
+                        }
+                        Thread.Sleep(4000);
+                    }
+                    return true;
                 case Choice.Exit:
                     return false;
-               
+
                 default:
                     Console.WriteLine("You typed something wrong,try again!");
                     return true;
             }
-            
+
 
         }
 
@@ -97,7 +173,7 @@ namespace Prototype.Services
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("\r\n\t Select an option: ");
-            
+
 
         }
     }

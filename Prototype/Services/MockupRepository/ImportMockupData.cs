@@ -59,5 +59,7 @@ namespace Prototype.Services.MockupRepository
             List<Trainer> Trainers = JsonConvert.DeserializeObject<List<Trainer>>(json);
             return Trainers;
         }
+
+        
     }
 }

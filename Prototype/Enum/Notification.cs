@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prototype.Enum
 {
-    public enum Notifications
+    public enum SpecialMessages
     {
         Start_Process=1,
         Start_Application,

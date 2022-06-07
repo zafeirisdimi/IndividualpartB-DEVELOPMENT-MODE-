@@ -18,7 +18,6 @@
 
         protected override void Seed(Prototype.ApplicationDatabase.ApplicationContext context)
         {
-
             //Realistic Data Entry to test my application
             Student s1 = new Student() { FirstName = "Aristotelis", LastName = "Nikolaou", Phone = "2104512987", Email = "nikolaou@hotmail.com", TuitionFees = 2500, Age = 32 };
             Student s2 = new Student() { FirstName = "Panagiotis", LastName = "Pipiros", Phone = "2107755986", Email = "pipiros@yahoo.com", TuitionFees = 2000, Age = 32 };
@@ -34,18 +33,28 @@
             Trainer t4 = new Trainer() { FirstName = "Menelaos", LastName = "Adamantos", Phone = "214748449", Email = "christinapapa@gmail.com", Salary = 3500, Age = 41, Subject = Subject.JS_FUNDENMENTALS };
             context.Trainers.AddOrUpdate(t => t.FirstName, t1, t2, t3, t4);
 
+
             Course c1 = new Course() { Name = "HTML FUNDENMENTALS", Description = "HTML Fundamentals for developers", TotalHours = 40, Difficulty = Difficulty.Easy};
             Course c2 = new Course() { Name = "CSS  FUNDENMENTALS", Description = "CSS  Fundamentals for developers", TotalHours = 40, Difficulty = Difficulty.Easy};
             Course c3 = new Course() { Name = "JS   FUNDENMENTALS", Description = "JS   Fundamentals for developers", TotalHours = 100, Difficulty = Difficulty.Normal };
             Course c4 = new Course() { Name = "C#   FUNDENMENTALS", Description = "C#   Fundamentals for developers", TotalHours = 150, Difficulty = Difficulty.Hard};
             Course c5 = new Course() { Name = "SQL  FUNDENMENTALS", Description = "SQL  Fundamentals for developers", TotalHours = 80, Difficulty = Difficulty.Hard };
             context.Courses.AddOrUpdate(c => c.Name, c1, c2, c3, c4, c5);
+            
+            
+            Assignment a1 = new Assignment() { Name = "Assignment 1", Description = "HTML webpage", StartDate =DateTime.Now , EndDate = DateTime.Now.AddDays(7) };
+            Assignment a2 = new Assignment() { Name = "Assignment 2", Description = "CSS  customization", StartDate = DateTime.Now, EndDate = DateTime.Now.AddHours(24) };
+            Assignment a3 = new Assignment() { Name = "Assignment 3", Description = "JS   crud", StartDate = DateTime.Now, EndDate = DateTime.Now.AddDays(14) };
+            Assignment a4 = new Assignment() { Name = "Assignment 4", Description = "C#   interfaces", StartDate = DateTime.Now, EndDate = DateTime.Now.AddHours(72) };
+            Assignment a5 = new Assignment() { Name = "Assignment 5", Description = "SQL  database", StartDate = DateTime.Now.AddHours(24), EndDate = DateTime.Now.AddDays(28) };
+            context.Assignments.AddOrUpdate(a => a.Name, a1, a2, a3, a4, a5);
 
-            Assignment a1 = new Assignment() { Name = "Assignment 1", Description = "HTML Fundamentals for developers", StartDate =DateTime.Now , EndDate = DateTime.Now.AddDays(7) };
-            Course a2 = new Course() { Name = "Assignment 2", Description = "CSS  Fundamentals for developers", StartDate = DateTime.Now, EndDate = DateTime.Now.AddHours(24) };
-            Course a3 = new Course() { Name = "Assignment 3", Description = "JS   Fundamentals for developers", StartDate = DateTime.Now, EndDate = DateTime.Now.AddDays(14) };
-            Course a4 = new Course() { Name = "Assignment 4", Description = "C#   Fundamentals for developers", StartDate = DateTime.Now, EndDate = DateTime.Now.AddHours(72) };
-            Course a5 = new Course() { Name = "Assignment 5", Description = "SQL  Fundamentals for developers", StartDate = DateTime.Now.AddHours(24), EndDate = DateTime.Now.AddDays(28) };
+
+
+
+
+
+
 
             context.SaveChanges();
 
