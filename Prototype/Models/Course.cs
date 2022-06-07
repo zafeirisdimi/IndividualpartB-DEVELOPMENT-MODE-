@@ -27,9 +27,15 @@ namespace Prototype.Models
         public string Website { get ; set ; }
 
         public virtual ICollection<Student> Students { get; set; }
+        public virtual ICollection<Trainer> Trainers { get; set; }
+
+        public virtual ICollection<Assignment> Assignments { get; set; }
+
         public Course()
         {
             this.Students = new HashSet<Student>();
+            this.Trainers = new HashSet<Trainer>();
+            this.Assignments = new HashSet<Assignment>();
         }
     }
 }

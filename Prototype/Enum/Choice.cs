@@ -16,7 +16,8 @@ namespace Prototype.Models
         PrintTrainersPerCourse,
         PrintAssignmentsPerCourse,
         PrintAssignmentsPerCoursePerStudent,
-        PrintStudentsInMultipleCourses
+        PrintStudentsInMultipleCourses,
+        Exit
         
     }
 
