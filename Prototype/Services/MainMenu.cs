@@ -26,10 +26,9 @@ namespace Prototype.Services
                 case Choice.Students:
                     using (var c = new ApplicationContext())
                     {
-
                         var students = c.Students.ToList();
                         StudentAction.PrintAllStudents(students);
-                        Thread.Sleep(1000);
+                        Thread.Sleep(3000);
                     }
                     return true;
 
@@ -38,7 +37,7 @@ namespace Prototype.Services
                     {
                         var trainers = c.Trainers.ToList();
                         TrainerAction.PrintAllTrainers(trainers);
-                        Thread.Sleep(2000);
+                        Thread.Sleep(3000);
                     }
                     return true;
 
@@ -67,11 +66,11 @@ namespace Prototype.Services
                         var courses = c.Courses.ToList();
                         foreach (var course in courses)
                         {
-                            Console.WriteLine($"\t\t|Title: {course.Name}\t has: ({course.Students.Count()}) students");
+                            CourseAction.PrintExtend(course);
 
                             foreach (var stu in course.Students)
                             {
-                                Console.WriteLine($"\t\t\t\t\t\t\t Student {stu.FirstName,-10}\t{stu.LastName,-10} ");
+                                StudentAction.PrintShort(stu);
                             }
                             Thread.Sleep(4000);
                         }
@@ -88,7 +87,7 @@ namespace Prototype.Services
 
                             foreach (var trainer in course.Trainers)
                             {
-                                Console.WriteLine($"\t\t\t\t\t\t\t Trainer {trainer.FirstName,-10}\t{trainer.LastName,-10} ");
+                                TrainerAction.PrintInfo(trainer);
                             }
                             Thread.Sleep(4000);
                         }
@@ -102,9 +101,9 @@ namespace Prototype.Services
                         {
                             Console.WriteLine($"\t\t|Course: {course.Name}\t has: ({course.Assignments.Count()}) assignments");
 
-                            foreach (var assign in course.Assignments)
+                            foreach (var assignment in course.Assignments)
                             {
-                                Console.WriteLine($"\t\t\t\t\t\t\t|Title: {assign.Name}\t|Points: {assign.Points}\t|StartDate: {assign.StartDate}\t|StartDate: {assign.EndDate}");
+                                AssigmentAction.PrintExtend(assignment);
                             }
                             Thread.Sleep(4000);
                         }
@@ -116,15 +115,14 @@ namespace Prototype.Services
                         var students = c.Students.ToList();
                         foreach (var s in students)
                         {
-                            Console.WriteLine($"\t\t Student {s.FirstName,-10}\t{s.LastName,-10} has ({s.Courses.Count()}) courses ");
-                            //Console.WriteLine($"\t\t Assignment {a.Name,-10}\t{a.Points,-10} teach: ({a.Courses.Count()}) courses");
+                            StudentAction.PrintExtend(s);
                             
                             foreach (var course in s.Courses)
                             {
                                 Console.WriteLine($"\t\t\t|Title: {course.Name}\t has ({course.Assignments.Count}) assignments");
                                 foreach (var assign in course.Assignments)
                                 {
-                                    Console.WriteLine($"\t\t |Assignment {assign.Name,-10}\t|Points:{assign.Points,-10}");
+                                    AssigmentAction.PrintInfo(assign);
                                 }
                             }
                             Thread.Sleep(4000);
@@ -142,6 +140,7 @@ namespace Prototype.Services
                         Thread.Sleep(4000);
                     }
                     return true;
+
                 case Choice.Exit:
                     return false;
 

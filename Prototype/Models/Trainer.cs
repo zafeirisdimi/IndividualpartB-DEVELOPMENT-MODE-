@@ -49,9 +49,9 @@ namespace Prototype.Models
 
         public Trainer()
         {
-            this.Students = new HashSet<Student>();
+            
             this.Courses = new HashSet<Course>(); //implementation relationship many to many
-
+            this.Students = new HashSet<Student>();
         }
     }
 }
