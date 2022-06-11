@@ -73,7 +73,6 @@
     <Compile Include="Models\ISimpleModel.cs" />
     <Compile Include="Models\State.cs" />
     <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\StudentPerCourse.cs" />
     <Compile Include="Models\Trainer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,23 +12,28 @@ namespace Prototype.Models
 {
     public class Student : IPerson
     {
+
+        //[StringLength(50, MinimumLength = 5, ErrorMessage = "Validation Error in Student:FirstName")]
+        //[StringLength(70, MinimumLength = 5, ErrorMessage = "Validation Error in Student:LastName")]
+        //[StringLength(100, MinimumLength = 15, ErrorMessage = "Validation Error in Student:Email")]
+        //[StringLength(20, MinimumLength = 10, ErrorMessage = "Validation Error in Student:Phone")]
         [Key]
         public int StudentId { get; set; }
 
         [Required]
-        [StringLength(50, MinimumLength = 5)]
+        
         public string FirstName { get; set; }
 
         [Required]
-        [StringLength(70, MinimumLength = 5)]
+        
         public string LastName { get; set; }
 
         [Required]
-        [StringLength(100, MinimumLength = 15)]
+        
         public string Email { get; set; }
 
         [Required]
-        [StringLength(20, MinimumLength = 10)]
+        
         public string Phone { get; set; }
 
         [Required]

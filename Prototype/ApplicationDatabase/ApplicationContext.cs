@@ -17,7 +17,7 @@ namespace Prototype.ApplicationDatabase
 
         //--------------DbSet <Entity> Entities -------------
         public virtual DbSet<Student> Students { get; set; }
-        public virtual DbSet<StudentPerCourse> StudentPerCourses { get; set; }
+       
         public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Trainer> Trainers { get; set; }
         public virtual DbSet<Assignment> Assignments { get; set; }

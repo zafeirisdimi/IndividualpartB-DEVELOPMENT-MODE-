@@ -11,32 +11,38 @@ namespace Prototype.Models
 {
     public class Trainer : IPerson
     {
-        [Key]
+        //[StringLength(50, MinimumLength = 5,ErrorMessage = "Validation Error in Trainer:FirstName")]
+        //[StringLength(70, MinimumLength = 5, ErrorMessage = "Validation Error in Trainer:LastName")]
+        //[StringLength(100, MinimumLength = 15, ErrorMessage = "Validation Error in Trainer:Email")]
+        //[StringLength(20, MinimumLength = 10, ErrorMessage = "Validation Error in Trainer:Phone")]
+
+
+        
         public int TrainerId { get; set; }
 
-        [Required]
-        [StringLength(50, MinimumLength = 5)]
+        
+        
         public string FirstName { get; set; }
 
-        [Required]
-        [StringLength(70, MinimumLength = 5)]
+       
+        
         public string LastName { get; set; }
 
-        [Required]
-        [StringLength(100, MinimumLength = 15)]
+        
+        
         public string Email { get; set; }
 
-        [Required]
-        [StringLength(20, MinimumLength = 10)]
+        
+        
         public string Phone { get; set; }
 
-        [Required]
+        
         public decimal Salary { get; set; }
 
-        [Range(15, 100)]
+        
         public int Age { get; set; }
 
-        [Required]
+        
         public Subject Subject { get; set;  }
 
         public int? CityId { get; set; } //foreign key --- relationship [0.1 to *]

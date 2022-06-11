@@ -19,8 +19,8 @@
         protected override void Seed(Prototype.ApplicationDatabase.ApplicationContext context)
         {
             //Realistic Data Entry to test my application
-
-            #region Students
+           
+                #region Students
             Student s1 = new Student() { FirstName = "Aristotelis", LastName = "Nikolaou", Phone = "2104512987", Email = "nikolaou@hotmail.com", TuitionFees = 2500, Age = 32};
             Student s2 = new Student() { FirstName = "Panagiotis", LastName = "Pipiros", Phone = "2107755986", Email = "pipiros@yahoo.com", TuitionFees = 2000, Age = 32 };
             Student s3 = new Student() { FirstName = "Eleni", LastName = "Adamantou", Phone = "2104411202", Email = "eleni.a@gmail.com", TuitionFees = 2200, Age = 30 };
@@ -29,6 +29,7 @@
             context.Students.AddOrUpdate(s => s.FirstName, s1, s2, s3, s4, s5);
             context.SaveChanges();
             #endregion
+            
 
             #region Trainers
             Trainer t1 = new Trainer() { FirstName = "Panagiotis", LastName = "Papadopoulou", Phone = "214748449", Email = "christinapapa@gmail.com", Salary = 3000, Age = 40, Subject = Subject.HTML_FUNDANMENTALS};
@@ -41,11 +42,11 @@
 
 
             #region Courses
-            Course c1 = new Course() { Name = "HTML FUNDENMENTALS", Description = "HTML basics", TotalHours = 40, Difficulty = Difficulty.Easy};
-            Course c2 = new Course() { Name = "CSS  FUNDENMENTALS", Description = "CSS  basics ", TotalHours = 40, Difficulty = Difficulty.Easy };
-            Course c3 = new Course() { Name = "JS   FUNDENMENTALS", Description = "JS   basics ", TotalHours = 100, Difficulty = Difficulty.Normal };
-            Course c4 = new Course() { Name = "C#   FUNDENMENTALS", Description = "C#   basics ", TotalHours = 150, Difficulty = Difficulty.Hard };
-            Course c5 = new Course() { Name = "SQL  FUNDENMENTALS", Description = "SQL  basics", TotalHours = 80, Difficulty = Difficulty.Hard };
+            Course c1 = new Course() { Name = "HTML FUNDENMENTALS", Description = "HTML basics", TotalHours = 40, Difficulty = Difficulty.Easy, Website= " https://www.coursera.org/ " };
+            Course c2 = new Course() { Name = "CSS  FUNDENMENTALS", Description = "CSS  basics ", TotalHours = 40, Difficulty = Difficulty.Easy , Website = " https://www.coursera.org/ " };
+            Course c3 = new Course() { Name = "JS   FUNDENMENTALS", Description = "JS   basics ", TotalHours = 100, Difficulty = Difficulty.Normal , Website = " https://www.coursera.org/ " };
+            Course c4 = new Course() { Name = "C#   FUNDENMENTALS", Description = "C#   basics ", TotalHours = 150, Difficulty = Difficulty.Hard, Website = " https://www.coursera.org/ " };
+            Course c5 = new Course() { Name = "SQL  FUNDENMENTALS", Description = "SQL  basics", TotalHours = 80, Difficulty = Difficulty.Hard, Website = " https://www.coursera.org/ " };
             context.Courses.AddOrUpdate(c => c.Name, c1, c2, c3, c4, c5);
             context.SaveChanges();
             #endregion
@@ -84,6 +85,11 @@
             State st6 = new State() { Name = "Thrace", Website = "https://en.wikipedia.org/wiki/Athens" };
             context.States.AddOrUpdate(st => st.Name, st1, st2, st3, st4, st5, st6);
             context.SaveChanges();
+            #endregion
+
+
+            #region StudentCourses seeding
+
             #endregion
         }
     }
