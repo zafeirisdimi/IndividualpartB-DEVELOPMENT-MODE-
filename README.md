@@ -1,5 +1,13 @@
+---------------------------------------------------------
+
+![ProjectLogo](ProjectLogo.png)
+
+-----------------------------------------------------
+
 # IndividualProjectPartB
 Assignment to practise SQL fundamentals connected with C# and Entity Framework
+
+
 
 <details><summary><h2>Description</h2></summary>
 <p>
