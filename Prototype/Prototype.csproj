@@ -76,6 +76,7 @@
     <Compile Include="Models\Trainer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MyInsertDB.cs" />
     <Compile Include="Services\MainMenu.cs" />
     <Compile Include="Services\MockupRepository\IInputMockupData.cs" />
     <Compile Include="Services\MockupRepository\ImportMockupData.cs" />

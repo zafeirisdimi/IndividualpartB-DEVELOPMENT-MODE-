@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Prototype.Services
 {
@@ -18,6 +19,13 @@ namespace Prototype.Services
     {
         public static bool Run()
         {
+            //MyInsertDB.StudentsPerCourse()
+            //MyInsertDB.StudentsPerAssignment()
+            //MyInsertDB.CoursesPerAssignment()
+            //MyInsertDB.TrainersPerCourse()
+            //MyInsertDB.TrainersPerStudents()
+            //NOT - WORKING RIGHT THE QUERIES OF 
+
             Menu();
             int input = Convert.ToInt32(Console.ReadLine());
             Choice choice = (Choice)input;
