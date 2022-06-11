@@ -49,10 +49,45 @@ Assignment to practise SQL fundamentals connected with C# and Entity Framework
 <!--ts-->
 
 
+
+* [ApplicationDatabase](#applicationdatabase)
+    * [ApplicationContext](#applicationcontext)
+* [Migrations](#migrations)
+    * [Configurations](#configurations)
+* [Models](#)
+    * [Enum](#enum)
+      * [Choice](#choice)
+      * [Difficulty](#difficulty)
+      * [Notification](#notification)
+      * [Stream](#stream)
+      * [Subject](#subject)
+      * [Typecourse](#typecourse)
+   * [Assignment](#assignment)
+   * [City](#city)
+   * [Course](#course)
+   * [Grade](#grade)
+   * [State](#state)
+   * [Student](#student)
+   * [Trainer](#trainer)
+   * [Offer-Order](#offer-order)
+   * [Policy](#policy)
+* [Interfaces](#interfaces)
+   * [ISimpleModel](#isimplemodel)
+   * [IPerson](#iperson)
+* [Services](#services)
+   * [MockupRepository](#mockuprepository)
+   * [MainMenu](#mainmenu)
+   * [MyInsertDB](#myinsertdb)
+* [Installation](#installation)
+* [Technologies](#technologies)
+* [Team](#team)
   
    
    
 <!--te-->
+
+------------------------------------------------------------------------------------------------------------------------------
+
 
 ### SQL Schema
 ![SQL SCHEMA](Prototype/img/SQLSCHEMA.png)
