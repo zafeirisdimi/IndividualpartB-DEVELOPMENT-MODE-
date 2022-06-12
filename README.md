@@ -5,7 +5,7 @@
 -----------------------------------------------------
 
 # Individual_Project_PartB
-Assignment to practise SQL fundamentals connected with C# and Entity Framework
+Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>C#</strong> and <strong>Entity Framework</strong>.
 
 
 
