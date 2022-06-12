@@ -4,7 +4,7 @@
 
 -----------------------------------------------------
 
-# Individual Project (PartB)
+# Individual_Project_PartB
 Assignment to practise SQL fundamentals connected with C# and Entity Framework
 
 
@@ -77,8 +77,6 @@ Assignment to practise SQL fundamentals connected with C# and Entity Framework
    * [State](#state)
    * [Student](#student)
    * [Trainer](#trainer)
-   * [Offer-Order](#offer-order)
-   * [Policy](#policy)
 * [Interfaces](#interfaces)
    * [ISimpleModel](#isimplemodel)
    * [IPerson](#iperson)
@@ -88,7 +86,7 @@ Assignment to practise SQL fundamentals connected with C# and Entity Framework
    * [MyInsertDB](#myinsertdb)
 * [Installation](#installation)
 * [Technologies](#technologies)
-* [Team](#team)
+
   
    
    
@@ -97,5 +95,134 @@ Assignment to practise SQL fundamentals connected with C# and Entity Framework
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-### SQL Schema
+## SQL Schema
 ![SQL SCHEMA](Prototype/img/SQLSCHEMA.png)
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+## ApplicationDatabase
+### ApplicationContext
+## Migrations
+### Configurations
+## Models
+### Student
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+
+
+### Trainer
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### Course
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### Assignment
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### City
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+### State
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### Grade
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### Enum
+#### Choice
+
+#### Difficulty
+
+#### Notification
+
+#### Stream
+
+#### Subject
+
+#### TypeCourse
+
+## Interfaces
+
+### ISimpleModel
+
+### IPerson
+
+## Services 
+
+### MockupRepository
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### MainMenu
+
+### MyInsertDB
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+## Views
+
+
+
+### AssignmentView
+
+### CourceView
+
+### StudentView
+
+### TrainerView
+
+## Installation
+## Technologies
+
+##### [Back to >Top<](#Individual_Project_PartB) #####
