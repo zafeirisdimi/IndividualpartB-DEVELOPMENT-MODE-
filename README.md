@@ -136,12 +136,18 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 
 ### Assignment
 
-| Type           | Properties       | Methods |
-| :---:          |     :---:        |  :---:  |
-| int            | ID     | get, set   |
-| string            | FirstName     | get, set   |
-| string         | LastName      | get, set    |
-| double         | PhoneNumber       | get, set    |
+| Type   	| Properties   	| Methods 	| Required 	|
+|:---:	|:---:	|:---:	|:---:	|
+| int    	| AssignmentId 	| get,set 	| [x]      	|
+| string 	| Name         	| get,set 	| [x]      	|
+| string 	| Description  	| get,set 	| [x]      	|
+| int    	| Points       	| get,set 	| [x]      	|
+| string 	| DownloadLink 	| get,set 	|          	|
+| bool   	| IsSubmitted  	| get,set 	|          	|
+| bool   	| IsUploaded   	| get,set 	|          	|
+| int?   	| TrainerId    	| get,set 	|          	|
+| int?   	| CourseId     	| get,set 	|          	|
+|        	|              	|         	|          	|
 
 ### City
 
@@ -172,15 +178,66 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 ### Enum
 #### Choice
 
+| Number 	| Message                       	|
+|:---: |:---: 	|
+| 1      	| Students                      	|
+| 2      	| Trainers                      	|
+| 3      	| Courses                       	|
+| 4      	| Assignments                   	|
+| 5      	| StudentCourse                 	|
+| 6      	| TrainerCourse                 	|
+| 7      	| AssignmentCourse              	|
+| 8      	| AssgnmentsPerCoursePerStudent 	|
+| 9      	| StudentsInMultipleCourses     	|
+
 #### Difficulty
+
+| Number 	| Message 	|
+|:---:	|:---:	|
+| 1      	| Easy    	|
+| 2      	| Normal  	|
+| 3      	| Hard    	|
 
 #### Notification
 
+| Number 	| Message                  	|
+|:---:	|:---:	|
+| 1      	| Start_Proces             	|
+| 2      	| Start_Application        	|
+| 3      	| Completed                	|
+| 4      	| Not_Working              	|
+| 5      	| Error                    	|
+| 6      	| Please_wait              	|
+| 7      	| End_Process              	|
+| 8      	| Exiting_from_Application 	|
+
 #### Stream
+
+| Number 	| Message   	|
+|:---:|:---:	|
+| 1      	| By_TEAMS  	|
+| 2      	| On_Demand 	|
+| 3      	| In_Class  	|
 
 #### Subject
 
+| Number 	| Message              	|
+|:---:	|:---:	|
+| 1      	| HTML_FUNDANMENTALS   	|
+| 2      	| CSS_FUNDENMENTALS    	|
+| 3      	| JS_FUNDENMENTALS     	|
+| 4      	| CSHARP_FUNDENMENTALS 	|
+| 5      	| SQL_FUNDENMENTALS    	|
+
 #### TypeCourse
+
+| Number 	| Message  	|
+|:---:|:---:	|
+| 1      	| FULLTIME 	|
+| 2      	| PARTTIME 	|
+| 3      	| REMOTE   	|
+| 4      	| HYDRID   	|
+| 5      	| PRIVATE  	|
 
 ## Interfaces
 
