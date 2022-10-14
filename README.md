@@ -1,15 +1,18 @@
----------------------------------------------------------
-
-![ProjectLogo](/img/ProjectLogo.png)
-
------------------------------------------------------
-
-# Individual_Project_PartB
-Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>C#</strong> and <strong>Entity Framework</strong>.
+------------------------------------------------------------------------------------------------------------
 
 
+<p align="center">
+<img src="/img/ProjectLogo.png" width="700" alt="ProjectLogo">
+</p>
 
-<details><summary><h2>Description</h2></summary>
+-----------------------------------------------------------------------------------------------------------------
+
+# Individual_Project_PartB #
+
+<h2>💡Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>C#</strong> and <strong>Entity Framework</strong>.</h2>
+
+<details><summary><h3>Description</h3></summary>
+
 <p>
      <h3>Following PART A you need to implement the below functionality:</h3> 
     <ul>
@@ -29,7 +32,7 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
     <li> <h4>All the assignments per course per student[2marks]</h4></li>
     <li> <h4>A list of students that belong to more than one courses[3marks]</h4></li>
     </ul>
-  <li> <h3>You also need to produce a small project that [26 marks]</h3></li>
+  <li> <h4>You also need to produce a small project that [26 marks]</h4></li>
   <ul>
       <li>makes  a  connection  to  the  database and  executes  the  above  sql queries[9 marks]</li>
       <li>makes a connection to the database and inserts inputdata from the keyboard to the following tables,</li>
@@ -44,25 +47,22 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
       </ul>
   </ul>
   </ul>
-  <h3>You    need    to    submit    all    the    produced    files    in    a    zip    file    named    by your_name_individual_partb.zip</h3>
+  <h5>You    need    to    submit    all    the    produced    files    in    a    zip    file    named    by your_name_individual_partb.zip</h5>
     </p>
+    
+    
 </details>
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📋Table of contents
-=================
+# 📋Table of contents #
+
 
 <!--ts-->
 
 
-
-* [ApplicationDatabase](#applicationdatabase)
-    * [ApplicationContext](#applicationcontext)
-* [Migrations](#migrations)
-    * [Configurations](#configurations)
-* [Models](#)
+* [Models](#models)
     * [Enum](#enum)
       * [Choice](#choice)
       * [Difficulty](#difficulty)
@@ -82,30 +82,29 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
    * [IPerson](#iperson)
 * [Services](#services)
    * [MockupRepository](#mockuprepository)
-   * [MainMenu](#mainmenu)
    * [MyInsertDB](#myinsertdb)
-* [Installation](#installation)
-* [Technologies](#technologies)
 
-  
-   
    
 <!--te-->
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-## SQL Schema
-![SQL SCHEMA](Prototype/img/SQLSCHEMA.png)
+## 📐SQL Schema ##
+
+
+<p align="center">
+<img src="Prototype/img/SQLSCHEMA.png" width="700" alt="SQL SCHEMA">
+</p>
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
-## ApplicationDatabase
-### ApplicationContext
-## Migrations
-### Configurations
-## Models
-### Student
+
+
+## 🧱Models ##
+-------------------------------------------------------------------------------------------------------------------------------------
+
+### 👨‍🎓Student ###
 
 | Type           | Properties       | Methods |
 | :---:          |     :---:        |  :---:  |
@@ -115,17 +114,7 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | double         | PhoneNumber       | get, set    |
 
 
-
-### Trainer
-
-| Type           | Properties       | Methods |
-| :---:          |     :---:        |  :---:  |
-| int            | ID     | get, set   |
-| string            | FirstName     | get, set   |
-| string         | LastName      | get, set    |
-| double         | PhoneNumber       | get, set    |
-
-### Course
+### 👨‍🏫Trainer ###
 
 | Type           | Properties       | Methods |
 | :---:          |     :---:        |  :---:  |
@@ -134,7 +123,16 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | string         | LastName      | get, set    |
 | double         | PhoneNumber       | get, set    |
 
-### Assignment
+### 🧮Course ###
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### 🏋️Assignment ###
 
 | Type   	| Properties   	| Methods 	| Required 	|
 |:---:	|:---:	|:---:	|:---:	|
@@ -149,24 +147,9 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | int?   	| CourseId     	| get,set 	|          	|
 |        	|              	|         	|          	|
 
-### City
+[🔝Back](#table-of-contents)
 
-| Type           | Properties       | Methods |
-| :---:          |     :---:        |  :---:  |
-| int            | ID     | get, set   |
-| string            | FirstName     | get, set   |
-| string         | LastName      | get, set    |
-| double         | PhoneNumber       | get, set    |
-### State
-
-| Type           | Properties       | Methods |
-| :---:          |     :---:        |  :---:  |
-| int            | ID     | get, set   |
-| string            | FirstName     | get, set   |
-| string         | LastName      | get, set    |
-| double         | PhoneNumber       | get, set    |
-
-### Grade
+### 🌁City ###
 
 | Type           | Properties       | Methods |
 | :---:          |     :---:        |  :---:  |
@@ -175,8 +158,28 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | string         | LastName      | get, set    |
 | double         | PhoneNumber       | get, set    |
 
-### Enum
-#### Choice
+### State ###
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+### 🈴Grade ###
+
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
+
+[🔝Back](#table-of-contents)
+
+### Enum ###
+#### Choice ####
 
 | Number 	| Message                       	|
 |:---: |:---: 	|
@@ -190,7 +193,7 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | 8      	| AssgnmentsPerCoursePerStudent 	|
 | 9      	| StudentsInMultipleCourses     	|
 
-#### Difficulty
+#### Difficulty ####
 
 | Number 	| Message 	|
 |:---:	|:---:	|
@@ -198,7 +201,7 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | 2      	| Normal  	|
 | 3      	| Hard    	|
 
-#### Notification
+#### Notification ####
 
 | Number 	| Message                  	|
 |:---:	|:---:	|
@@ -211,7 +214,7 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | 7      	| End_Process              	|
 | 8      	| Exiting_from_Application 	|
 
-#### Stream
+#### Stream ####
 
 | Number 	| Message   	|
 |:---:|:---:	|
@@ -219,7 +222,9 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | 2      	| On_Demand 	|
 | 3      	| In_Class  	|
 
-#### Subject
+[🔝Back](#table-of-contents)
+
+#### Subject ####
 
 | Number 	| Message              	|
 |:---:	|:---:	|
@@ -229,7 +234,7 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | 4      	| CSHARP_FUNDENMENTALS 	|
 | 5      	| SQL_FUNDENMENTALS    	|
 
-#### TypeCourse
+#### TypeCourse ####
 
 | Number 	| Message  	|
 |:---:|:---:	|
@@ -239,26 +244,19 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | 4      	| HYDRID   	|
 | 5      	| PRIVATE  	|
 
-## Interfaces
+-----------------------------------------------------------------------------------------------------------------------------------
 
-### ISimpleModel
+## 👓Interfaces ##
 
-### IPerson
+- ISimpleModel
 
-## Services 
+- IPerson
 
-### MockupRepository
+[🔝Back](#table-of-contents)
 
-| Type           | Properties       | Methods |
-| :---:          |     :---:        |  :---:  |
-| int            | ID     | get, set   |
-| string            | FirstName     | get, set   |
-| string         | LastName      | get, set    |
-| double         | PhoneNumber       | get, set    |
-
-### MainMenu
-
-### MyInsertDB
+## 🐕‍🦺Services ## 
+ 
+### MockupRepository ###
 
 | Type           | Properties       | Methods |
 | :---:          |     :---:        |  :---:  |
@@ -267,19 +265,29 @@ Assignment to practise <strong>SQL fundamentals</strong> connected with <strong>
 | string         | LastName      | get, set    |
 | double         | PhoneNumber       | get, set    |
 
-## Views
 
+### MyInsertDB ###
+-------------------------------------------------------------------------------------------------------
 
+| Type           | Properties       | Methods |
+| :---:          |     :---:        |  :---:  |
+| int            | ID     | get, set   |
+| string            | FirstName     | get, set   |
+| string         | LastName      | get, set    |
+| double         | PhoneNumber       | get, set    |
 
-### AssignmentView
+------------------------------------------------------------------------------------------------------
 
-### CourceView
+## 🏵️Views ##
 
-### StudentView
+-------------------------------------------------------------------------------------------------------
 
-### TrainerView
+- AssignmentView
 
-## Installation
-## Technologies
+- CourceView
 
-##### [Back to >Top<](#Individual_Project_PartB) #####
+- StudentView
+
+- TrainerView
+
+[🔝Back](#table-of-contents)
